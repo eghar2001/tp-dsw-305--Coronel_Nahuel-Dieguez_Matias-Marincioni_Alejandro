@@ -2,21 +2,31 @@
 
 ## Grupo
 ### Integrantes
-* legajo - Apellido(s), Nombre(s)
+* 47850, Coronel Eghar Nahuel
+* 48194, Marincioni Alejandro
+* 47947, Dieguez Matias
 
 ### Repositorios
-* [frontend app](http://hyperlinkToGihubOrGitlab)
-* [backend app](http://hyperlinkToGihubOrGitlab)
-*Nota*: si utiliza un monorepo indicar un solo link con fullstack app.
+* [fullstack app](["link"](https://github.com/eghar2001/tp-desarrollo))
+
 
 ## Tema
 ### Descripción
-*2 a 6 líneas describiendo el negocio (menos es más)*
+SellNow es una plataforma de compraventa en línea que conecta a compradores y vendedores dentro de Argentina de manera rápida y sencilla. Permite a los usuarios publicar productos para la venta y buscar productos que deseen comprar dentro del país.
+Entre otras cosas, permite a los usuarios realizar las siguientes tareas:
+<ul>
+  <li>Crear una cuenta: Los usuarios pueden registrarse fácilmente utilizando su dirección de correo electrónico.</li>
+  <li>Publicar productos: Los vendedores pueden crear listados para los productos que desean vender, incluyendo fotos y una descripcion del mismo, asi como la ubicacion de este</li>
+  <li>Buscar y filtrar productos: Los compradores pueden buscar productos por categoría, ubicación o nombre, y explorar los listados disponibles en su área.</li>
+  <li>Calificaciones: Los usuarios pueden dejar calificaciones sobre las transacciones completadas, </li>
+  <li>Preguntas: Se podran dejar preguntas a los vendedores respecto a un producto</li>
+  <li>Notificaciones: La aplicación envía notificaciones a los usuarios sobre actividades relevantes, como  ventas hechas o una actualización en el estado de una compra realzada</li>
+</ul>
 
 ### Modelo
-![imagen del modelo]()
+![imagen del modelo](https://app.diagrams.net/#G1F-wYKdEiRRRPjhs1PMbIXb1Cld1Jq2yr#%7B%22pageId%22%3A%22-QJHrh1hych9j8nOmGhD%22%7D)
 
-*Nota*: incluir un link con la imagen de un modelo, puede ser modelo de dominio, diagrama de clases, DER. Si lo prefieren pueden utilizar diagramas con [Mermaid](https://mermaid.js.org) en lugar de imágenes.
+
 
 ## Alcance Funcional 
 
@@ -27,17 +37,17 @@
 Regularidad:
 |Req|Detalle|
 |:-|:-|
-|CRUD simple|1. CRUD Tipo Habitacion<br>2. CRUD Servicio<br>3. CRUD Localidad|
-|CRUD dependiente|1. CRUD Habitación {depende de} CRUD Tipo Habitacion<br>2. CRUD Cliente {depende de} CRUD Localidad|
-|Listado<br>+<br>detalle| 1. Listado de habitaciones filtrado por tipo de habitación, muestra nro y tipo de habitación => detalle CRUD Habitacion<br> 2. Listado de reservas filtrado por rango de fecha, muestra nro de habitación, fecha inicio y fin estadía, estado y nombre del cliente => detalle muestra datos completos de la reserva y del cliente|
-|CUU/Epic|1. Reservar una habitación para la estadía<br>2. Realizar el check-in de una reserva|
+|CRUD simple|1. CRUD Usuario<br>2.CRUD costeEnvio 3.CRUD Categoria|
+|CRUD dependiente|1. CRUD Compra {depende de} CRUD Usuario <br>3.CRUD publicacion{depende de} CRUD usuario y CRUD categoria |
+|Listado<br>+<br>detalle| 1. Listado de compras  de un usuario filtrado por fecha de compra, muestra fecha de compra monto<br> 2. Listado de publicaciones filtrado por categoría , por nombre, por precio|
+|CUU/Epic|1.Publicación de Producto<br>2. Compra de Producto|
 
 
 Adicionales para Aprobación
 |Req|Detalle|
 |:-|:-|
-|CRUD |1. CRUD Tipo Habitacion<br>2. CRUD Servicio<br>3. CRUD Localidad<br>4. CRUD Provincia<br>5. CRUD Habitación<br>6. CRUD Empleado<br>7. CRUD Cliente|
-|CUU/Epic|1. Reservar una habitación para la estadía<br>2. Realizar el check-in de una reserva<br>3. Realizar el check-out y facturación de estadía y servicios|
+|CRUD |1. CRUD CosteEnvio<br>2. CRUD Localidad<br>3.CRUD Pregunta <br>|
+|CUU/Epic|1.Carga de las Localidades <br>2.Creación de Pregunta por el Usuario<br>3. |
 
 
 ### Alcance Adicional Voluntario
@@ -46,7 +56,5 @@ Adicionales para Aprobación
 
 |Req|Detalle|
 |:-|:-|
-|Listados |1. Estadía del día filtrado por fecha muestra, cliente, habitaciones y estado <br>2. Reservas filtradas por cliente muestra datos del cliente y de cada reserve fechas, estado cantidad de habitaciones y huespedes|
-|CUU/Epic|1. Consumir servicios<br>2. Cancelación de reserva|
-|Otros|1. Envío de recordatorio de reserva por email|
+...
 
