@@ -47,7 +47,7 @@ Adicionales para Aprobación
 |Req|Detalle|
 |:-|:-|
 |CRUD |1. CRUD CosteEnvio<br>2. CRUD Localidad<br>3.CRUD Pregunta <br>|
-|CUU/Epic|1.Carga de las Localidades <br>2.Creación de Pregunta por el Usuario<br>3. |
+|CUU/Epic|1.Cargar localidades <br>2.Hacer pregunta<br>3. |
 
 
 ### Alcance Adicional Voluntario
